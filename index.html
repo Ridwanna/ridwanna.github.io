@@ -1,99 +1,308 @@
 <!DOCTYPE html>
 <html>
-	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/jpg" href="../images/favic.jpg">		 
-		<title>Skyline</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/jpg" href="images/macbook_triangles-wallpaper-1366x768.jpg">		
+		<title>Readline|Home</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="../bootstrap 4/css/bootstrap.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</head>
-	<body>
-			<embed class="fixed-top" width="100%" height="65px" src="navbar.html"> 	
-			<!-- <header class="row"> -->
-					<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-						<div class="container">
-								<a href="index.html" class="navbar-brand active"><img src="">SkyLine</a> -->
-								<!-- navbar collapsible goes here -->
-								 <!-- Toggle/collapsible Button -->
-								 <!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItem" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-								    <span class="navbar-toggler-icon"></span>
-								  </button>
-							<div class="collapse navbar-collapse" id="navItem">
-								<ul class="navbar-nav ml-auto">
-							      <li  class="nav-item bg-info m-2"><a href="index.html" class="nav-link">Home</a></li>
-							      <li class="nav-item bg-primary m-2"><a href="tech_skills.html" class="nav-link">Skills</a></li>
-							      <li class="nav-item bg-warning m-2"><a href="experience.html" class="nav-link">Experience</a></li>
-							      <li class="nav-item bg-danger m-2"><a href="proj_blog.html" class="nav-link">Project&Blogs</a></li>
-							      <li class="nav-item bg-success m-2"><a href="cert_ach.html" class="nav-link">Certificates</a></li>
-							      <li class="nav-item bg-primary m-2"><a href="hobby_ref.html" class="nav-link">Referees</a></li>
-							    </ul>
-					  		</div>
-						</div>
-					</nav> -->
-				<div class="container-fluid">
-					<header class="row">
-						<!-- <div class="align-self-center col-md-2 offset-md-5 text-center mb-2">
-							<button class="btn btn-secondary" style="padding: 16px">
-								Click Me...
-							</button>
-						</div> -->
-					</header>
+
+	<body class=" bg-dark">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<div class="container" style="padding:0px 20px">
+				<button id="button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItem" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse ml-5" id="navItem">
+					<ul class="navbar-nav">
+						<li class="nav-item p-1 m-2"><a href="#" class="nav-link">HowTo</a></li>
+				      	<li class="nav-item p-1 m-2"><a href="#contact" class="nav-link">Contact</a></li>
+					</ul>
 				</div>
-			<br>
-			<!-- <div class="bg-success m-3" style="height: 20px"></div> -->
-			<article class="container bg-secondary">
-				<section class="row summary text-center">
-					<div class="col-md-8 offset-md-2">
-					   
-						<!-- <h3 id="hm" class="bg-secondary">About Me</h3> -->
-						<button class="m-2 bg-" style="padding:16px"><h3>About Me</h3></button>
-						<p class="m-3 bg-light">
-						I am a responsible, open-minded individual, and software enthusiast. I have strong learning and excellent interpersonal skills. A great team player, am eager to learn more in order to grow, improve and apply my skills in order to proffer solutions to industry and daily challenges. I have interest in applying algorithmic problem solving to tackle software related problems, which am very much open to learn.
-						</p>
-						<img src="../images/ridwan.jpg" style="width:300px;" class="p-2 mb-4">
+				<a href="index.html" class="navbar-brand active mr-5"><img src="">CDLagos WebDev Tutorial</a>
+			</div>
+		</nav>
+
+		<!-- contents  -->
+			<div class="container bg-light" style="margin-top: 6%;">
+				<section class="row">					
+					<div class="col-md-12 element">
+						<h2 class="m-3 mt-3">HTML  ELEMENTS, TAGS, ATTRIBUTES, IMAGES, LISTS.</h2>
+						<h4>Html elements</h4>
+						<p> <strong>An HTML element </strong> is defined by an opening tag, if the element contains other content(s), it ends with  closing tag. Where the element name is preceded by a forward slash as shown below with few tags.</p>
+						<pre>
+							<code>	
+							Examples are: 
+								&lt;p&gt;..contents..&lt;/p&gt;, 
+								&lt;h1&gt;..contents..&lt;/h1&gt;, 
+								&lt;title&gt; and “&lt;/title&gt;, 
+								&lt;body&gt;...contents&lt;/body&gt;, 
+								&lt;img src="" /&gt;,
+								&lt;style type=""&gt;..contents..&lt;/style&gt;
+							</code>
+						</pre>
 					</div>
-					<!-- <div class="col-sm-6">
-						<h3>Courses</h3>
+					<div class="col-md-12 types">
+						<h4>Types of Element</h4>
+							<p>
+								Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline
+							</p>
+							<h5>Block-level Elements</h5>
+							<p>
+								A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). The &lt;div&gt; element is a block-level element.
+							</p>
+							<pre>
+								<code>	
+								Examples are: 
+									&lt;video&gt;, &lt;article&gt;, 
+									&lt;aside&gt;, &lt;section&gt;, 
+									&lt;canvas&gt;, “&lt;nav&gt;, 
+									&lt;div&gt;, &lt;footer&gt;, 
+									&lt;header&gt;, &lt;p&gt;, etc
+								</code>
+							</pre>
+							<h5>Inline Elements</h5>
+							<p>
+								An inline element does not start on a new line and only takes up as much width as necessary. This is an inline &lt;span&gt;..conetents..&lt;/span&gt; element inside a paragraph.
+							</p>
+							<pre>
+								<code>	
+								Examples are: 
+									&lt;abbr&gt;, &lt;img&gt;, 
+									&lt;b&gt;, &lt;b&gt;, 
+									&lt;select&gt;, &lt;big&gt;, 
+									&lt;button&gt;, &lt;a&gt; 
+									&lt;label&gt;, &lt;input&gt;, 
+									&lt;script&gt;, &lt;style&gt; etc
+								</code>
+							</pre>
+
+							<p>
+								<b>DIV Element:</b> The &lt;div&gt; element is often used as a container for other HTML elements.
+								The &lt;div&gt; element has no required attributes, but style, class and id are common.
+								When used together with CSS, the &lt;div&gt; element can be used to style blocks of content.
+							</p>
+							<br>
+							<p>
+								<b>SPAN Element:</b> The &lt;span&gt; element is often used as a container for some text.
+								The &lt;span&gt; element has no required attributes, but style, class and id are common.
+								When used together with CSS, the &lt;span&gt; element can be used to style parts of the text.
+							</p>
+						</div>
+					<br>
+					<div class="col-md-12 tags">
+						<h4>HTML Tags</h4> 
 						<p>
-							As part of my SWEskills training program, I took courses in Software Construction, Software Development Process, Algorithms & Data Structures, Programming Methodology with Java, Frontend and Full Stack Web Development/Foundation. I am familiar with Agile software development practices including Continuous Integration, Test Driven Development, Version Control, User Stories, and more.
+							These are the hidden keywords within a web page that define how your web browser must format and display the contents. Most tags must have two parts, an opening and a closing part.</p>
+						<pre>
+							<code>
+							Examples are:
+								&lt;html&gt; is the opening tag and &lt;/html&gt; is the closing tag.
+								&lt;html&gt;, &lt;h1&gt;, &lt;ol&gt;, 
+								&lt;button&gt;, &lt;head&gt;, &lt;/html&gt;,
+								&lt;/h1&gt;, &lt;/body&gt;, &lt;/head&gt;,  
+								&lt;/p&gt;, &lt;button&gt;, etc
+							</code>
+						</pre>
+
+						<p style="margin-top: -20px;"><strong>Self-closing tags </strong> don't require an ending tag.</p>
+						<pre>
+							<code>
+									&lt;br&gt;, &lt;hr&gt;,
+									 &lt;img&gt;, &lt;input&gt;, 
+									 &lt;link&gt;, &lt;meta&gt;, etc
+							</code>
+						</pre>
+					</div>
+					<div class="col-md-12 attribute">
+						<h4>An Attribute </h4> 
+						<p>
+							This defines a property for an element, consists of an attribute/value pair, and appears within the element's start tag. ... The most popular misuse of the term <b>"tag"</b> is referring to alt attributes as <b>"alt tags"</b>. There is no such thing in HTML. Alt is an attribute, not a tag.
 						</p>
-					</div> -->					
-				</section>
-				
-				<!-- <section class="row proj">
+						
+						<p>
+							<b>Note: Tags </b> are used to mark up the start and end of an HTML element. An attribute defines a property for an element. They are also extra bits of information. Attributes appear inside the opening tag and their values sit inside quotation marks. They look something like: <b>&lt;tag attribute = "value"&gt;</b>
+						</p>
+					</div>
+				</section><!-- Row 1 End Here -->
+				<br>
+				<section class="row">										
+					<div class="col-md-12 image">
+						<h2 class="m-2 text-center">HTML MEDIA</h2>
+							<h4 style="text-decoration: underline;">Image Tag</h4>
+						<p>
+							In HTML, images are defined with the <b>img</b> tag. The <b>img</b> tag is empty, it contains attributes only, and does not have a closing tag. The <b>src</b> attribute specifies the URL (web address) of the image and it is very compulsory. Other attributes are: <b>alt, length, width, style</b>
+						</p>
+						<p>Use the <b>&lt;map&gt;</b> tag to define an image-map. An image-map is an image with clickable areas.</p>
+						<pre>
+							<code>
+								<b>Syntax: </b>&lt;img src=" " /&gt;
+							</code>
+						</pre>
+					</div>
+					<div class="col-md-12 video">
+						<h4 style="text-decoration: underline;">Video Tag</h4>
+						<p>To show a video in HTML, use the &lt;video&gt; element. Supported formats are MP4, WebM, Ogg. </p>
+						<pre>
+							<code>
+							<b>Syntax: </b>&lt;video width="320" height="240" controls> <br><span style="margin-left: 470px">&lt;source src="movie.mp4" type="video/mp4" &gt;</span><br><span style="margin-left: 470px"> &lt;source src="movie.ogg" type="video/ogg"&gt;</span> <br><span style="margin-left: 470px">Your browser does not support the video tag.</span> <br><span style="margin-left: 430px">&lt;/video&gt;</span>
+							</code>
+						</pre>
+						<p>
+							<b>The controls attribute</b> adds video controls, like play, pause, and volume.
+							It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+						</p>
+						<p>
+							<b>The &lt;source&gt; element</b> allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format
+							To start a video automatically use the <b>autoplay attribute:</b>
+						</p><br>
+					</div>
+					<div class="col-md-12 audio">
+						<h4 style="text-decoration: underline;">Audio Tag</h4>
+						<p>To play an audio file in HTML, use the &lt;audio&gt; and &lt;/audio&gt; element. Supported formats are MP3, Wav, and Ogg.</p>
+						<pre>
+							<code>
+							<b>Syntax: </b>&lt;audio controls&gt; <br><span style="margin-left: 470px">&lt;source src="horse.ogg" type="audio/ogg" &gt;</span><br><span style="margin-left: 470px"> &lt;source  src="horse.mp3" type="audio/mpeg"&gt;</span><br><span style="margin-left: 470px"> &lt;source src="horse.wav" type="audio/wav"&gt;</span> <br><span style="margin-left: 470px">Your browser does not support the audio tag.</span> <br><span style="margin-left: 430px">&lt;/audio&gt;</span>
+							</code>
+						</pre>					
+					</div><br>
+					<div class="col-md-12 plugin">
+						<h4 style="text-decoration: underline;">Helper applications (plug-ins)</h4>
+						<p>
+							They are computer programs that extend the standard functionality of a web browser. Examples of well-known plug-ins are Java applets. Plug-ins can be added to web pages with the &lt;object&gt; tag or the &lt;embed&gt; tag
+						</p>
+						<p>
+							 Plug-ins can be used for many purposes: <b>display maps, scan for viruses, verify your bank id, etc.</b> The &lt;object&gt; element is supported by all browsers. The &lt;object&gt; element defines an embedded object within an HTML document. It is used to embed plug-ins <b>(like Java applets, PDF readers, Flash Players, html doc)</b> in web pages.4
+						</p>
+					</div>
+					<br>				
+					<code>
+							<p class="mt-4" style="font-style: italic; padding: 10px 12px; background-color: #000; color: #fff; margin-left: 50%;">There are other ways/forma to use media in your project. <a href="https://www.w3schools.com/html/html_media.asp" target="-blank">W3Schools [Media]</a> is your friend</p>
+					</code>			
+				</section><!-- Row 1 End Here -->
+				<br>
+				<section class="row">
+					<div class="col-md-12 unordered_list">
+						<h2 class="m-4">LIST</h2>
+							<h4 style="text-decoration: underline;">Unordered List</h4>
+							<p>
+								<b>An Unordered List</b> starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag. The list items will be marked with bullets (small black circles) by default. The CSS <b>list-style-type property</b> is used to define the style of the list item marker: <b>Disc (default), Circle, Square, None.</b>
+							</p>
+							<pre>
+							<code>
+							<b>Syntax:</b>
+								&lt;ul&gt;
+									&lt;li&gt;...Content...&lt;/li&gt;
+									&lt;li&gt;...Content...&lt;/li&gt;
+								&lt;/ul&gt;
+							</code>
+							</pre>
+					</div>
+					<br>
+					<div class="col-md-12 ordered_list">
+						<h4 style="text-decoration: underline;">Ordered List</h4>
+							<p>
+								<b>An Ordered List</b> starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag. The list items will be marked with numbers by default. The type attribute of the &lt;lo&gt; tag, defines the type of the list item marker:<b> 1, A, a, I, i </b>
+							</p>
+							<pre>
+							<code>
+							<b>Syntax:</b>
+								&lt;ol&gt;
+									&lt;li&gt;...Content...&lt;/li&gt;
+									&lt;li&gt;...Content...&lt;/li&gt;
+								&lt;/ol&gt;
+							</code>
+							</pre>
+					</div>
+					<div class="col-md-12 descrip">
+						<h4>Descriptive List</h4>
+						<p>HTML also supports description lists. A description list is a list of terms, with a description of 	each term. The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:
+						</p>
+						<pre>
+						<code>
+						<b>Syntax:</b>
+							&lt;dl&gt;
+								&lt;dt&gt;....&lt;/dt&gt;
+									&lt;dd&gt;...Content...&lt;/dd&gt;
+								&lt;dt&gt;....&lt;/dt&gt;
+									&lt;dd&gt;...Content...&lt;/dd&gt;
+							&lt;/dl&gt;
+						</code>
+						</pre>
+					</div>
+					<code>
+						<p class="mt-4" style="font-style: italic; padding: 10px 12px; background-color: #000; color: #fff; margin-left: 50%;">There are other ways/forma to use media in your project. <a href="https://www.w3schools.com/html/html_lists.asp" target="-blank">W3Schools [List]</a> is your friend</p>
+					</code>
+				</section><!-- Row 1 End Here -->
+				<br>
+				<section class="row">
+					<div class="col-md-12 boiler">
+						<h4>BOILERPLATE</h4>
+						<p>
+							This is the basic structure of an html document/page. HTML Living Standard defines that the &lt;html&gt;, &lt;head&gt; and &lt;body&gt; tags may be safely omitted under most circumstances. The &lt;meta charset="UTF-8"&gt; tag may also be omitted if the Web server is properly configured to send the character encoding along with the content type. Google’s HTML/CSS style guide recommends that all optional tags be omitted, resulting in a much more compact boilerplate
+						</p>
+					<pre>
+					<code>
+					<b>Syntax:</b>
+						&lt;!DOCTYPE html&gt;
+							&lt;html&gt;
+								&lt;head&gt;
+									&lt;meta charset="UTF-8"&gt;
+									&lt;title&gt; .... &lt;/title&gt;
+								&lt;/head&gt;
+								&lt;body&gt;
+									.... contents
+								&lt;/body&gt;
+							&lt;/html&gt;
+							</code>
+						</pre>
+					</div>
+					<div class="col-md-12 comment">
+						<h4>HTML Comments</h4>
+						<p>
+							Comments can be inserted in the HTML code to make it more re adable and understandable. Comments are ignored by the browser and are not displayed.
+							Comments are written like this:
+						</p>
+						<pre>
+						<code>
+						 <b>Syntax:</b>
+							&lt;html&gt;
+								&lt;head&gt;
+									&lt;meta charset="UTF-8"&gt;
+									&lt;title&gt; .... &lt;/title&gt;
+								&lt;/head&gt;
+								&lt;body&gt;
+									&lt;!-- This comment will not be displayed --&gt;
+									&lt;p&gt; This is how we illustrate comment in html &lt;/p&gt;
+								&lt;/body&gt;
+							&lt;/html&gt;
+								</code>
+							</pre>
+					</div>
+				</section> <!-- Row 1 End Here -->
 
-					<h3 id="proj">Projects and Blogs</h3>
 
-				</section>
-				<section class="row cert">
+			</div> <!-- Container Div End Here -->
 
-					<h3 id="cert">Certificates & Achievements</h3>
-
-				</section>
-				<section class="row hob-refs">
-
-					<h3 id="ref">Hobbies & Referees</h3>
-
-				</section> -->
-			</article>
-			<br>
-			
-			<!-- <footer class="row bg-dark text-white text-center">
+			<!-- Footer Here -->
+			<footer class="row bg-dark text-white text-center" id="contact">
 				<div class="container">
-			        <p class="float-right"><a href="#">Back to top</a></p>
-				    <p>&copy; Designed by: SkyLine Inc</p>
-			    	<p><span><a href="#"><i class="fab fa-facebook"></i></a><a href="#" ><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></a></i></span></p>
-			     </div>
-			</footer> -->
-			<object width="100%" data="footer.html" style="overflow: auto;"></object> 
+			        <span class="float-right"><a href="#">Back to top</a></span>
+				    <span class="display-5">&copy; Ridwan Oyedele - Powered by: SkyLine Inc.</span>
 
-		<script type="text/javascript" src="../bootstrap 4/js/jquery-3.3.1.js"></script>		
-	    <script type="text/javascript" src="../bootstrap 4/js/bootstrap.min.js"></script>
-	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			    	<span class="float-left"><a href="https://twitter.com/honilart" target="_blank"><i class="fab fa-twitter"></i></a>
+			    	<a href="mailto:realsure10@gmail.com" target="_blank"><i class="fas fa-envelope"></a></i></span>
+			    </div>
+			</footer>
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
