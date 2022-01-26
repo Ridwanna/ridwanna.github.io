@@ -1,43 +1,431 @@
+/**{letter-spacing: 1px;}*/
+
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
 body {
-    margin: 60px auto;
-    width: 70%;
+  font-family: "Raleway", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+  font-size: 16px;
 }
+
+li {
+  font-size: 15px;
+}
+
+.navbar-dark .site-name {
+  font-size: 30px;
+  font-weight: 300;
+  color: #B0B0B0;
+  text-transform: uppercase;
+}
+
+/* ============== Header CSS ================ */
+
+header {
+  margin-top: 3rem;
+}
+
+.header-overlay {
+  background: url(../images/project.jpg);
+  height: 500px;
+  /* background-size: cover; */
+  /*object-fit: cover;*/
+  background-repeat: no-repeat;
+  background-color: rgba(31, 31, 31, 0.75);
+  /* background-position: 50% 50%; */
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.header-text {
+  margin-top: 4rem;
+}
+
+.header-text h1 {
+  color: #F5F5DC;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1;
+  padding-top: 40px;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  color: #F5F5DC;
+  font-size: 15px;
+  line-height: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+#heart {
+  padding: 0;
+  font-size: 35px;
+  color: #FF6347;
+}
+
+/* ============== END ================ */
+
+/* ============== Generic CSS ================ */
+.section-title {
+  padding: 0 0 50px 0;
+}
+
+.section-title h2 {
+  position: relative;
+  text-align: center;
+  color: #333;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* short underline */
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background-color: darkgray;
+  margin-left: -30px;
+}
+
+.section-title p {
+  color: #333;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 45px;
+}
+/* ============== END ================ */
+
+/* =========== About me CSS =========== */
+.about-me-wrapper {
+  padding-top: 30px;
+  margin: 3em 15px;
+}
+
+.about-me img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding-right: 10px;
+  border-radius: 30px;
+}
+
+/* ============== END ================ */
+
+/* ============== skills CSS ================ */
+.skills-title {
+  padding-bottom: 20px;
+}
+.section-title #skills-title {
+  /* padding: 0;
+  text-align: left; */
+  color: #696969;
+}
+
+.section-title #skills-title::after {
+  color: #696969;
+  left: 50%;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  margin-left: -30px;
+}
+
+.skills-img {
+  background: url(../images/comp.jpg);
+  height: 20px;
+  width: 100%;
+  margin: 15px 10px 0 10px;
+  background-repeat: repeat;
+  background-color: rgba(31, 31, 31, 0.75);
+  /* background-position: 50% 50%; */
+  background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+}
+
+.skills-overview {
+  padding: 0 30px;
+  margin-left: 5rem;
+  margin-top: 0;
+}
+
+.languages,
+.technologies,
+.industry-tools {
+  position: relative;
+  padding: 0;
+  margin-bottom: 65px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* .languages-icon,
+.technologies-icon,
+.industry-tools-icon {
+  position: absolute;
+  right: 145px;
+  top: -15px;
+  font-size: 25px;
+  color: #696969;
+  width: 30px;
+  height: 30px;
+  text-align: left;
+} */
+
+.skills-overview h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  color: #556b2f;
+}
+
+/* .languages h3 {
+  padding-left: 1.8em;
+}
+
+.technologies h3 {
+  padding-left: 0.3em;
+}
+
+.industry-tools-icon {
+  right: 135px;
+} */
+
+.skills-overview ul li {
+  list-style-type: none;
+  color: #778899;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.8rem;
+}
+
+/* .skills-overview h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 0px;
+  color: #333;
+} */
+
+/* .technologies p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 15px;
+} */
+
+/* ============== END ================ */
+
+/* ============== Experience CSS ================ */
+.experiences {
+  padding: 15px;
+  /* margin-top: 2rem; */
+}
+
+.section-title .experience-title {
+  color: rgba(148, 82, 82, 0.61);
+}
+
+.section-title .experience-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 40%;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(148, 82, 82, 0.61);
+  margin-left: -30px;
+}
+
+/* .hr-line {
+  width: 80%;
+  height: 3px;
+  margin-left: 8rem;
+} */
+
+.experience-overview {
+  padding: 0 30px 30px 30px;
+}
+
+.exper-one,
+.exper-two,
+.exper-three,
+.exper-four {
+  margin-left: 10em;
+}
+
+.experience-overview h4 {
+  color: #bc8f8f;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.experience-overview span {
+  line-height: 1;
+  margin-top: 0;
+  color: #d8bfd8;
+  font-weight: 400;
+}
+
+.experience-overview p {
+  line-height: 2;
+  color: #2f4f4f;
+}
+
+.experience-overview ul li {
+  color: #2f4f4f;
+  line-height: 2;
+  list-style-type: square;
+}
+
+/* ============== End ================ */
+
+/* ============== other-services ================ */
+.other-services {
+  padding: 30px;
+  margin: 0 10rem;
+}
+
+.other-services h4 {
+  position: relative;
+  text-align: center;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #696969;
+  text-transform: uppercase;
+}
+
+.other-services h4::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 40%;
+  width: 40px;
+  height: 2px;
+  background-color: #696969;
+  /* margin-left: -30px; */
+}
+
+.other-services ul {
+  margin-bottom: 10px;
+}
+
+.other-services ul li {
+  line-height: 2;
+  list-style-type: square;
+  color: #708090;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* .voluntary-services {
+  width: 100%;
+  height: 50px;
+  border: 2 solid blue;
+} */
+
+/* ============== End ================ */
+
+
+/* ============== Referees CSS ================ */
+.referee-overview .section-title {
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.section-title .referees {
+  color: #606060;
+}
+
+.referee-list {
+  padding: 20px;
+  margin: 0 20px 0 10rem;
+}
+
+.referee-list h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5;
+  color: #696969;
+}
+
+.referee-list p {
+  line-height: 1;
+  font: 18px;
+  color: #787878;
+}
+
+/* ============== End ================ */
+
+
+/* ============== Footer CSS ================ */
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+ height: 150px;
+ padding-top: 1.5em;
+ background-color: #C0C0C0;
+ border-bottom: 3px solid #129cf3;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.footer-content {
+  margin: 0 5em;
 }
 
-ul.posts li {
-    list-style: none;
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
+
+.fa:hover {
+  color: #B0C4DE;
+}
+
+/* .fa-facebook {
+  background: #3b5998;
+  color: white;
+} */
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+  margin-left: 5px;
+}
+
+.fa-github {
+  background: #0d0d0d;
+  color: white;
+}
+
+#arrow-up {
+  font-size: 30px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+#copyright {
+  font-size: 18px;
+  color: #0d0d0d;
+}
+
+/* ============== End ================ */

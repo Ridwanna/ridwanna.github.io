@@ -1,1 +1,0 @@
-# ridwanna.github.io

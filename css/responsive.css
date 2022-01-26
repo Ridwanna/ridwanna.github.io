@@ -1,0 +1,83 @@
+/* small Devices */
+@media only screen and (max-width: 545px) {
+  .navbar-dark .site-name {
+    font-size: 20px;
+  }
+
+  .header-overlay {
+    max-width: 100%;
+    height: 500px;
+    background-size: cover;
+  }
+
+  .header-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    line-height: 1.5;
+    font-size: 30px;
+    padding: 5px;
+    margin-top: 5rem;
+  }
+
+  .about-me-wrapper {
+    padding-top: 10px;
+    margin: 2em 0;
+  }
+
+  .skills-overview {
+    padding: 0 20px;
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .skills-overview h3 {
+    margin-bottom: 5px;
+  }
+
+  .exper-one,
+  .exper-two,
+  .exper-three,
+  .exper-four {
+    margin-left: 0;
+  }
+
+  .experience-overview h4 {
+      font-size: 16px;
+      font-weight: 300;
+  }
+
+  .experience-overview span {
+    font-weight: 200;
+    font-size: 15px;
+  }
+
+  .other-services {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .referee-list {
+    padding: 20px;
+    margin: 5px;
+  }
+
+  footer {
+    padding-top: 1rem;
+    }
+   
+   .footer-content {
+     margin: 0;
+   }
+}
+
+/* small Devices and Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 992px) {
+}
