@@ -19,7 +19,7 @@
     line-height: 1.5;
     font-size: 30px;
     padding: 5px;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   .about-me-wrapper {
@@ -72,6 +72,7 @@
    .footer-content {
      margin: 0;
    }
+
 }
 
 /* small Devices and Tablets */
