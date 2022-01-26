@@ -1,24 +1,38 @@
 
-
+// to use wow animation library
 document.addEventListener("DOMContentLoaded", (e) => {
     "use strict";
     // for animation/ initialize wow
     new WOW().init();
-
-    // let links = document.querySelectorAll(".nav-link");
-    // let navCollapse = document.querySelector(".navbar-collapse");
-
-    // function collapse (items) {
-    //     items.forEach(link => {
-    //         link.addEventListener('click', (e) => {
-    //             navCollapse.toggleAttribute(e);
-    //         })
-    //     });
-    // }
-    // console.log (collapse(links));
-    
 })
 
+// to auto hide navbar on mobile after click
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+// highlight menu on scroll
+$(document).ready(function(){
+    'use strict'; 
+
+    $(window).scroll(function(){
+        'use strict';
+
+        $("section").each(function(){
+            'use strict';
+
+            let idAttri = $(this).attr('id');
+            let height = $(this).outerHeight();
+            let greaterTop = $(this).offset().top - 70;
+            let newId = $(".navbar-nav li a[href='#" + idAttri +"']");
+
+            if ($(window).scrollTop() > greaterTop && $(window).scrollTop() < greaterTop + height){
+                newId.parent().addClass("active");
+                
+            } else {
+                newId.parent().removeClass("active")
+            }
+        
+        })
+    })
+})

@@ -5,6 +5,10 @@
   /* padding: 0; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-y: scroll;
@@ -406,12 +410,13 @@ footer {
 .fa-twitter {
   background: #55acee;
   color: white;
-  margin-left: 5px;
+  margin-left: 0 5px;
 }
 
 .fa-github {
   background: #0d0d0d;
   color: white;
+  margin: 0 5px;
 }
 
 #arrow-up {
