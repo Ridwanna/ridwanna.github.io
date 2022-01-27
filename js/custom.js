@@ -23,7 +23,7 @@ $(document).ready(function(){
 
             let idAttri = $(this).attr('id');
             let height = $(this).outerHeight();
-            let greaterTop = $(this).offset().top - 70;
+            let greaterTop = $(this).offset().top - 150;
             let newId = $(".navbar-nav li a[href='#" + idAttri +"']");
 
             if ($(window).scrollTop() > greaterTop && $(window).scrollTop() < greaterTop + height){
